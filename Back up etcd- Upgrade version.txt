@@ -21,3 +21,7 @@ ETCDCTL_API=3 etcdctl --data-dir=/var/lib/etcd-backup --endpoints=https://127.0.
 	- sudo kubeadm upgrade apply v1.30.x
 + Upgrade kubelet, kubectl tương tự:
 + Uncordon the node: kubectl uncordon <node-to-uncordon>
+
+
++ Note:
+	- Folder default etcd: /var/lib/etcd. Nếu muốn thử back-up có hoạt động không chỉ cần trỏ lại phần hostpath trong file etcd.yaml
